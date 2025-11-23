@@ -1,0 +1,276 @@
+﻿body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: url('../image/background_den7.png') no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    color: white;
+}
+
+/* Header styling */
+.header {
+    color :white;
+    background-color: #333;
+    color: white;
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+.menu-items h1 {
+    color: white;
+    font-size: 26px;
+    font-weight: 600;
+    margin: 0;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.banner {
+    width: 100%;
+    text-align: center;
+    margin-top: 2px;
+}
+
+.banner p {
+    color: white;
+    font-size: 14px;
+    margin: 0;
+    padding: 5px 0;
+}
+
+.settings-icon {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.settings-icon:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Table styling */
+#itemPlaceholderContainer {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: fixed;
+}
+
+#itemPlaceholderContainer th {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+#itemPlaceholderContainer td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Column width adjustments */
+#itemPlaceholderContainer th:nth-child(1), /* Images */
+#itemPlaceholderContainer td:nth-child(1) {
+    width: 90px;
+}
+
+#itemPlaceholderContainer th:nth-child(2), /* ProductID */
+#itemPlaceholderContainer td:nth-child(2),
+#itemPlaceholderContainer th:nth-child(3), /* CategoryID */
+#itemPlaceholderContainer td:nth-child(3),
+#itemPlaceholderContainer th:nth-child(4), /* BrandID */
+#itemPlaceholderContainer td:nth-child(4) {
+    width: 80px;
+}
+
+#itemPlaceholderContainer th:nth-child(5), /* ProductName */
+#itemPlaceholderContainer td:nth-child(5) {
+    width: 150px;
+}
+
+#itemPlaceholderContainer th:nth-child(6), /* Descriptions */
+#itemPlaceholderContainer td:nth-child(6) {
+    width: 250px; /* Wider column for descriptions */
+}
+
+#itemPlaceholderContainer th:nth-child(7), /* Price */
+#itemPlaceholderContainer td:nth-child(7) {
+    width: 100px;
+}
+
+#itemPlaceholderContainer th:nth-child(8), /* Actions */
+#itemPlaceholderContainer td:nth-child(8) {
+    width: 110px;
+}
+
+/* Product image styling */
+.product-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+}
+
+/* Form elements styling */
+input[type="text"], 
+textarea {
+    width: 95%;
+    box-sizing: border-box;
+    padding: 6px;
+}
+
+#DescriptionsTextBox {
+    width: 95%;
+    min-height: 60px;
+    resize: vertical;
+}
+
+.current-image-info {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Button styling */
+.action-button {
+    width: 80px;
+    text-align: center;
+    padding: 6px 0;
+    margin: 3px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-size: 13px;
+    transition: all 0.3s;
+}
+
+.edit-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.delete-button {
+    background-color: #f44336;
+    color: white;
+}
+
+.update-button {
+    background-color: #2196F3;
+    color: white;
+}
+
+.cancel-button {
+    background-color: #607D8B;
+    color: white;
+}
+
+.insert-button {
+    background-color: #FF9800;
+    color: white;
+}
+
+.action-button:hover {
+    opacity: 0.8;
+}
+
+/* Status message styling */
+.status-message {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.success {
+    background-color: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+}
+
+.error {
+    background-color: #f2dede;
+    color: #a94442;
+    border: 1px solid #ebccd1;
+}
+
+/* DataPager styling */
+#DataPager1 {
+    text-align: center;
+    margin: 15px auto;
+    display: flex;
+    justify-content: center;
+}
+
+#DataPager1 input[type="submit"] {
+    padding: 6px 12px;
+    margin: 0 5px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+#DataPager1 input[type="submit"]:hover {
+    background-color: #e0e0e0;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .menu-items h1 {
+        font-size: 18px;
+    }
+    
+    .banner {
+        display: none;
+    }
+    
+    td, th {
+        padding: 8px 4px;
+        font-size: 14px;
+    }
+    
+    .action-button {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+    
+    .product-image {
+        max-width: 60px;
+        max-height: 60px;
+    }
+}
+
+/* Đặt lại màu chữ cho input bị disabled (vd: Auto) */
+input:disabled {
+    color: black;
+    background-color: #f0f0f0; /* tùy chọn: nền sáng giúp chữ đen dễ đọc hơn */
+    opacity: 1; /* bỏ hiệu ứng mờ mặc định */
+}
+

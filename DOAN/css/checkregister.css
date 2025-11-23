@@ -1,0 +1,16 @@
+﻿.checkregister {
+    border: 2px solid red;
+}
+.error-message {
+    color: red;
+    display: inline-flex; /* 👈 để ❗ và chữ nằm cùng 1 dòng */
+    align-items: center; /* 👈 căn giữa icon ❗ với chữ */
+    font-size: 12px; /* 👈 nhỏ lại chữ */
+    margin-top: 2px;
+    margin-left: 5px;
+    text-align: left;
+    font-weight: normal; /* 👈 chữ mềm mại hơn */
+}
+
+
+

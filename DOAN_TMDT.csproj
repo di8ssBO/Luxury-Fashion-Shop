@@ -1,0 +1,407 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{758D87E6-1C7E-4280-94AF-EBD437DEB123}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DOAN_TMDT</RootNamespace>
+    <AssemblyName>DOAN_TMDT</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44367</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\GucciGang.mdf" />
+    <Content Include="App_Data\GucciGang_log.ldf">
+      <DependentUpon>GucciGang.mdf</DependentUpon>
+    </Content>
+    <Content Include="DOAN\Audio\LV2AUDIO.mp3" />
+    <Content Include="DOAN\css\CSS-Homepage.css" />
+    <Content Include="DOAN\css\ProductDetail.css" />
+    <Content Include="DOAN\css\ProductStyles.css" />
+    <Content Include="DOAN\css\CSS-GioHang.css" />
+    <Content Include="DOAN\GioHang\WebForm-GioHang.aspx" />
+    <Content Include="DOAN\image\icon_giohang.jpg" />
+    <Content Include="DOAN\js\GioHang.js" />
+    <Content Include="DOAN\js\Homepage.js" />
+    <Content Include="DOAN\Homepage\WebForm-Homepage.aspx" />
+    <Content Include="DOAN\CheckDuplicateRegister.aspx" />
+    <Content Include="DOAN\Forgotpassword.aspx" />
+    <Content Include="DOAN\image\1.jpg" />
+    <Content Include="DOAN\image\2.jpg" />
+    <Content Include="DOAN\image\22.jpg" />
+    <Content Include="DOAN\image\3.jpg" />
+    <Content Include="DOAN\image\31.jpg" />
+    <Content Include="DOAN\image\3_1.jpg" />
+    <Content Include="DOAN\image\4.jpg" />
+    <Content Include="DOAN\image\aboutmetgala.jpg" />
+    <Content Include="DOAN\image\asp.jpg" />
+    <Content Include="DOAN\image\jennie.jpg" />
+    <Content Include="DOAN\image\Jennir.jpg" />
+    <Content Include="DOAN\image\lisa.jpg" />
+    <Content Include="DOAN\image\lisa1.jpg" />
+    <Content Include="DOAN\image\lisa_thumb.jpg" />
+    <Content Include="DOAN\image\ROSE.jpg" />
+    <Content Include="DOAN\image\thebestdress.jpg" />
+    <Content Include="DOAN\js\ProductPage.js" />
+    <Content Include="DOAN\js\Quantity.js" />
+    <Content Include="DOAN\css\OrdersPay.css" />
+    <Content Include="DOAN\js\OrdersPay.js" />
+    <Content Include="DOAN\orderscustomer\OrdersCustomer.aspx" />
+    <Content Include="DOAN\css\OrdersCustomer.css" />
+    <Content Include="DOAN\OrdersPay\OrdersPay.aspx" />
+    <Content Include="DOAN\ProductDetail\ProductDetail.aspx" />
+    <Content Include="DOAN\ProductPage\ProductPage.aspx" />
+    <Content Include="DOAN\role_admin\Read_Add_Edit_Delete.aspx" />
+    <Content Include="DOAN\css\Read_Add_Edit_Delete.css" />
+    <Content Include="DOAN\Video\Chanel.mp4" />
+    <Content Include="DOAN\Video\Chanel3.mp4" />
+    <Content Include="DOAN\Video\DIOR11.mp4" />
+    <Content Include="DOAN\Video\DIOR2.mp4" />
+    <Content Include="DOAN\Video\Gucci1.mp4" />
+    <Content Include="DOAN\Video\Gucci2.mp4" />
+    <Content Include="DOAN\Video\LV.mp4" />
+    <Content Include="DOAN\Audio\Opening.mp3" />
+    <Content Include="DOAN\image\background_den7.png" />
+    <Content Include="DOAN\css\CSS-customer_order.css" />
+    <Content Include="DOAN\css\CSS-FirstPage.css" />
+    <Content Include="DOAN\css\aspx%28Main%29.css" />
+    <Content Include="DOAN\css\checkregister.css" />
+    <Content Include="DOAN\image\Background.gif" />
+    <Content Include="DOAN\js\audio-control.js" />
+    <Content Include="DOAN\js\checkregister.js" />
+    <Content Include="DOAN\js\LoginRegister.js" />
+    <Content Include="DOAN\image\homepage.jpg" />
+    <Content Include="DOAN\js\Forgotpassword.js" />
+    <Content Include="DOAN\Video\LV21.mp4" />
+    <Content Include="DOAN\Options\WebForm-customer_order.aspx" />
+    <Content Include="DOAN\image%28Products%29\Balenciaga\24_7 Mask Sunglasses in Black.jpg" />
+    <Content Include="DOAN\image%28Products%29\Balenciaga\Bb Large Belt in Black.jpg" />
+    <Content Include="DOAN\image%28Products%29\Balenciaga\Diy Imprint Cropped Hoodie in Black Faded.jpg" />
+    <Content Include="DOAN\image%28Products%29\Balenciaga\Malibu Round Sunglasses in Silver.jpg" />
+    <Content Include="DOAN\image%28Products%29\Balenciaga\Men%27s 3xl Toe Spray Sneaker in White_blue_grey_red.jpg" />
+    <Content Include="DOAN\image%28Products%29\Balenciaga\Men%27s 6xl Sneaker in White.jpg" />
+    <Content Include="DOAN\image%28Products%29\Balenciaga\Men%27s Army Multicarry Backpack Medium in Black.jpg" />
+    <Content Include="DOAN\image%28Products%29\Balenciaga\Men%27s D Ring Belt in Black_white.jpg" />
+    <Content Include="DOAN\image%28Products%29\Balenciaga\Men%27s D Ring Belt in Blue.jpg" />
+    <Content Include="DOAN\image%28Products%29\Balenciaga\Men%27s Intertwined Polo in White.jpg" />
+    <Content Include="DOAN\image%28Products%29\Balenciaga\Men%27s Large Cargo Pants in Beige.jpg" />
+    <Content Include="DOAN\image%28Products%29\Balenciaga\Men%27s Rodeo Messenger Bag Small in Khaki.jpg" />
+    <Content Include="DOAN\image%28Products%29\Balenciaga\Men%27s Runner Graffiti Sneaker in Black.jpg" />
+    <Content Include="DOAN\image%28Products%29\Balenciaga\Men%27s Runner Sneaker in Grey.jpg" />
+    <Content Include="DOAN\image%28Products%29\Balenciaga\Men%27s Speed 2.0 Full Clear Sole Recycled Knit Sneaker in Black.jpg" />
+    <Content Include="DOAN\image%28Products%29\Balenciaga\Men%27s Unity Belt in Black.jpg" />
+    <Content Include="DOAN\image%28Products%29\Balenciaga\Men%27s Unity Skater Belt in Black.jpg" />
+    <Content Include="DOAN\image%28Products%29\Balenciaga\Men%27s Zip-up Jacket in Military Beige.jpg" />
+    <Content Include="DOAN\image%28Products%29\Balenciaga\Michelle Boxy T-shirt in Black Faded.jpg" />
+    <Content Include="DOAN\image%28Products%29\Balenciaga\Speed Sunglasses in Black.jpg" />
+    <Content Include="DOAN\image%28Products%29\Balenciaga\Sporty B Round Af Sunglasses in Black.jpg" />
+    <Content Include="DOAN\image%28Products%29\Balenciaga\Tag 2.0 Navigator Sunglasses in Brown.jpg" />
+    <Content Include="DOAN\image%28Products%29\Balenciaga\Women%27s Bel Air Carry All Bag Mini in Black.jpg" />
+    <Content Include="DOAN\image%28Products%29\Balenciaga\Women%27s Nano Handbag Medium in Dark Burgundy.jpg" />
+    <Content Include="DOAN\image%28Products%29\Balenciaga\Women%27s Rodeo Handbag Small in Almond.jpg" />
+    <Content Include="DOAN\image%28Products%29\Dior\30 Montaigne Reversible Belt.jpg" />
+    <Content Include="DOAN\image%28Products%29\Dior\B35 NXXT Sneaker.jpg" />
+    <Content Include="DOAN\image%28Products%29\Dior\B44 Blade Sneaker.jpg" />
+    <Content Include="DOAN\image%28Products%29\Dior\Beige and Black Dior Oblique Jacquard with Black Grained Calfskin.jpg" />
+    <Content Include="DOAN\image%28Products%29\Dior\Black and Crystal-Tone Square Sunglasses.jpg" />
+    <Content Include="DOAN\image%28Products%29\Dior\Black Rectangular Sunglasses.jpg" />
+    <Content Include="DOAN\image%28Products%29\Dior\Black Smooth Calfskin and Elastic Band.jpg" />
+    <Content Include="DOAN\image%28Products%29\Dior\Blue Smooth Calfskin and Dior Oblique Jacquard.jpg" />
+    <Content Include="DOAN\image%28Products%29\Dior\C%27est Dior Sneaker.jpg" />
+    <Content Include="DOAN\image%28Products%29\Dior\CD Chain M1U.jpg" />
+    <Content Include="DOAN\image%28Products%29\Dior\Dior Hit the Road Backpack with Flap.jpg" />
+    <Content Include="DOAN\image%28Products%29\Dior\Dior Star Sneaker.jpg" />
+    <Content Include="DOAN\image%28Products%29\Dior\Dior3D M2U.jpg" />
+    <Content Include="DOAN\image%28Products%29\Dior\Dioriviera Short Flared Dress.jpg" />
+    <Content Include="DOAN\image%28Products%29\Dior\Dioriviera Skort.jpg" />
+    <Content Include="DOAN\image%28Products%29\Dior\East-West Tote Bag.jpg" />
+    <Content Include="DOAN\image%28Products%29\Dior\Gradient Purple Rectangular Sunglasses.jpg" />
+    <Content Include="DOAN\image%28Products%29\Dior\Medium Dior Normandie Tote Bag.jpg" />
+    <Content Include="DOAN\image%28Products%29\Dior\Mini Dior Caro Bucket Bag.jpg" />
+    <Content Include="DOAN\image%28Products%29\Dior\Reversible Belt.jpg" />
+    <Content Include="DOAN\image%28Products%29\Dior\Shirtdress.jpg" />
+    <Content Include="DOAN\image%28Products%29\Dior\Shorts with Dior Buckle.jpg" />
+    <Content Include="DOAN\image%28Products%29\Dior\Small Dior Toujours Vertical Tote Bag.jpg" />
+    <Content Include="DOAN\image%28Products%29\Dior\Zipped Shirt with Christian Dior Couture Lily of the Valley Embroidery.jpg" />
+    <Content Include="DOAN\image%28Products%29\Gucci\EmbroideredMediumCanvasToteBag.jpg" />
+    <Content Include="DOAN\image%28Products%29\Gucci\Belt with bamboo detail buckle.jpg" />
+    <Content Include="DOAN\image%28Products%29\Gucci\Bleached GG cotton denim jacquard shirt.jpg" />
+    <Content Include="DOAN\image%28Products%29\Gucci\Cat-eye frame sunglasses.jpg" />
+    <Content Include="DOAN\image%28Products%29\Gucci\Cotton canvas shorts with embroidery.jpg" />
+    <Content Include="DOAN\image%28Products%29\Gucci\Geometrical frame sunglasses.jpg" />
+    <Content Include="DOAN\image%28Products%29\Gucci\GG belt with Interlocking G buckle.jpg" />
+    <Content Include="DOAN\image%28Products%29\Gucci\GG elastane swim briefs.jpg" />
+    <Content Include="DOAN\image%28Products%29\Gucci\GG Marmont belt with shiny buckle.jpg" />
+    <Content Include="DOAN\image%28Products%29\Gucci\GG Marmont thin belt with crystals.jpg" />
+    <Content Include="DOAN\image%28Products%29\Gucci\GGCanvasSmallCrossbodyBag.jpg" />
+    <Content Include="DOAN\image%28Products%29\Gucci\GucciNexusLargeToteBag.jpg" />
+    <Content Include="DOAN\image%28Products%29\Gucci\Leather jacket with embossed logo.jpg" />
+    <Content Include="DOAN\image%28Products%29\Gucci\MediumDuffleBagWithPrint.jpg" />
+    <Content Include="DOAN\image%28Products%29\Gucci\Men%27s Gucci Re-Web sneaker.jpg" />
+    <Content Include="DOAN\image%28Products%29\Gucci\Men%27s slip-on sneaker.jpg" />
+    <Content Include="DOAN\image%28Products%29\Gucci\Navigator sunglasses.jpg" />
+    <Content Include="DOAN\image%28Products%29\Gucci\Printed silk twill shorts.jpg" />
+    <Content Include="DOAN\image%28Products%29\Gucci\Reversible belt with Square G buckle.jpg" />
+    <Content Include="DOAN\image%28Products%29\Gucci\Round frame sunglasses.jpg" />
+    <Content Include="DOAN\image%28Products%29\Gucci\Square frame sunglasses.jpg" />
+    <Content Include="DOAN\image%28Products%29\Gucci\Women%27s G75 sneaker.jpg" />
+    <Content Include="DOAN\image%28Products%29\Gucci\Women%27s Gucci cub3d sneaker.jpg" />
+    <Content Include="DOAN\image%28Products%29\Gucci\Women%27s Screener sneaker.jpg" />
+    <Content Include="DOAN\image%28Products%29\Gucci\WovenMediumToteBag.jpg" />
+    <Content Include="DOAN\image%28Products%29\Hermes\Allback messenger bag.jpg" />
+    <Content Include="DOAN\image%28Products%29\Hermes\Boomerang sneaker.jpg" />
+    <Content Include="DOAN\image%28Products%29\Hermes\Bouncing sneaker.jpg" />
+    <Content Include="DOAN\image%28Products%29\Hermes\Caftan dress.jpg" />
+    <Content Include="DOAN\image%28Products%29\Hermes\Cavaliere belt buckle &amp; Reversible leather strap 13 mm.jpg" />
+    <Content Include="DOAN\image%28Products%29\Hermes\Day sneaker.jpg" />
+    <Content Include="DOAN\image%28Products%29\Hermes\Elan Pocket 24 belt.jpg" />
+    <Content Include="DOAN\image%28Products%29\Hermes\H Equestre belt buckle &amp; Reversible leather strap 24 mm.jpg" />
+    <Content Include="DOAN\image%28Products%29\Hermes\H Torsade belt buckle &amp; Leather strap 13 mm.jpg" />
+    <Content Include="DOAN\image%28Products%29\Hermes\Horseback bag.jpg" />
+    <Content Include="DOAN\image%28Products%29\Hermes\Jet sneaker.jpg" />
+    <Content Include="DOAN\image%28Products%29\Hermes\Kelly depeches 25 pouch.jpg" />
+    <Content Include="DOAN\image%28Products%29\Hermes\Kiddy slip-on sneaker.jpg" />
+    <Content Include="DOAN\image%28Products%29\Hermes\Lady Rider belt buckle &amp; Leather strap 24 mm.jpg" />
+    <Content Include="DOAN\image%28Products%29\Hermes\Pursangle tote bag.jpg" />
+    <Content Include="DOAN\image%28Products%29\Hermes\Sac a depeches light 1-36 briefcase.jpg" />
+    <Content Include="DOAN\image%28Products%29\Hermes\Sport capsule hooded vest.jpg" />
+    <Content Include="DOAN\image%28Products%29\Hermes\Sport capsule jogging pants.jpg" />
+    <Content Include="DOAN\image%28Products%29\Hermes\T-shirt with pocket.jpg" />
+    <Content Include="DOAN\image%28Products%29\Hermes\Twinset coat.jpg" />
+    <Content Include="DOAN\image%28Products%29\Louis Vuitton\1.0 Millionaires Sunglasses.jpg" />
+    <Content Include="DOAN\image%28Products%29\Louis Vuitton\Christopher MM.jpg" />
+    <Content Include="DOAN\image%28Products%29\Louis Vuitton\Clockwise Sunglasses.jpg" />
+    <Content Include="DOAN\image%28Products%29\Louis Vuitton\Damier Classic Denim Jacket.jpg" />
+    <Content Include="DOAN\image%28Products%29\Louis Vuitton\Everyday Pin 35mm Belt.jpg" />
+    <Content Include="DOAN\image%28Products%29\Louis Vuitton\Frill Blouse.jpg" />
+    <Content Include="DOAN\image%28Products%29\Louis Vuitton\Hide Away MM.jpg" />
+    <Content Include="DOAN\image%28Products%29\Louis Vuitton\Low Key Cookie MM.jpg" />
+    <Content Include="DOAN\image%28Products%29\Louis Vuitton\LV Dimension 40mm Belt.jpg" />
+    <Content Include="DOAN\image%28Products%29\Louis Vuitton\LV Epi Metal Sunglasses.jpg" />
+    <Content Include="DOAN\image%28Products%29\Louis Vuitton\LV Flex Derby.jpg" />
+    <Content Include="DOAN\image%28Products%29\Louis Vuitton\LV Flower 40mm Reversible Belt.jpg" />
+    <Content Include="DOAN\image%28Products%29\Louis Vuitton\LV Initiales 40mm Reversible.jpg" />
+    <Content Include="DOAN\image%28Products%29\Louis Vuitton\LV Skate Sneaker.jpg" />
+    <Content Include="DOAN\image%28Products%29\Louis Vuitton\LV Snowfall Ski Mask.jpg" />
+    <Content Include="DOAN\image%28Products%29\Louis Vuitton\LV Trainer Sneaker.jpg" />
+    <Content Include="DOAN\image%28Products%29\Louis Vuitton\LV Waimea L Sunglasses.jpg" />
+    <Content Include="DOAN\image%28Products%29\Louis Vuitton\LV x TM LV Trainers.jpg" />
+    <Content Include="DOAN\image%28Products%29\Louis Vuitton\Major Loafer.jpg" />
+    <Content Include="DOAN\image%28Products%29\Louis Vuitton\NéoNoé MM.jpg" />
+    <Content Include="DOAN\image%28Products%29\Louis Vuitton\Pont Neuf 35mm Belt.jpg" />
+    <Content Include="DOAN\image%28Products%29\Louis Vuitton\Side Strap T-Shirt.jpg" />
+    <Content Include="DOAN\image%28Products%29\Louis Vuitton\Signature Boxy Button-Up Coat.jpg" />
+    <Content Include="DOAN\image%28Products%29\Louis Vuitton\Trio Messenger.jpg" />
+    <Content Include="DOAN\SignIn_Up\trangchu.aspx" />
+    <Content Include="DOAN\css\login.css" />
+    <Content Include="DOAN\image%28Products%29\Louis Vuitton\Ribbon Signature Crop Top.jpg" />
+    <Content Include="DOAN\image%28Products%29\Promotion_Service\ThuongHieuDior.jpg" />
+    <Content Include="DOAN\image%28Products%29\Promotion_Service\ThuongHieuGucci.jpg" />
+    <Content Include="DOAN\image%28Products%29\Promotion_Service\ThuongHieuLV.jpg" />
+    <Content Include="DOAN\image%28Products%29\Dior\Walk%27n%27Dior Platform Sneaker.jpg" />
+    <Content Include="Web.config" />
+    <Content Include="DOAN\Firstpage\WebForm-FirstPage.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DOAN\GioHang\WebForm-GioHang.aspx.cs">
+      <DependentUpon>WebForm-GioHang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DOAN\GioHang\WebForm-GioHang.aspx.designer.cs">
+      <DependentUpon>WebForm-GioHang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DOAN\Homepage\WebForm-Homepage.aspx.cs">
+      <DependentUpon>WebForm-Homepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DOAN\Homepage\WebForm-Homepage.aspx.designer.cs">
+      <DependentUpon>WebForm-Homepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DOAN\CheckDuplicateRegister.aspx.cs">
+      <DependentUpon>CheckDuplicateRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DOAN\CheckDuplicateRegister.aspx.designer.cs">
+      <DependentUpon>CheckDuplicateRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DOAN\Forgotpassword.aspx.cs">
+      <DependentUpon>Forgotpassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DOAN\Forgotpassword.aspx.designer.cs">
+      <DependentUpon>Forgotpassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DOAN\Login.Master.cs">
+      <DependentUpon>Login.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DOAN\Login.Master.designer.cs">
+      <DependentUpon>Login.Master</DependentUpon>
+    </Compile>
+    <Compile Include="DOAN\Options\WebForm-customer_order.aspx.cs">
+      <DependentUpon>WebForm-customer_order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DOAN\Options\WebForm-customer_order.aspx.designer.cs">
+      <DependentUpon>WebForm-customer_order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DOAN\orderscustomer\OrdersCustomer.aspx.cs">
+      <DependentUpon>OrdersCustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DOAN\orderscustomer\OrdersCustomer.aspx.designer.cs">
+      <DependentUpon>OrdersCustomer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DOAN\OrdersPay\OrdersPay.aspx.cs">
+      <DependentUpon>OrdersPay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DOAN\OrdersPay\OrdersPay.aspx.designer.cs">
+      <DependentUpon>OrdersPay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DOAN\ProductDetail\ProductDetail.aspx.cs">
+      <DependentUpon>ProductDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DOAN\ProductDetail\ProductDetail.aspx.designer.cs">
+      <DependentUpon>ProductDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DOAN\ProductPage\ProductPage.aspx.cs">
+      <DependentUpon>ProductPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DOAN\ProductPage\ProductPage.aspx.designer.cs">
+      <DependentUpon>ProductPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DOAN\role_admin\Read_Add_Edit_Delete.aspx.cs">
+      <DependentUpon>Read_Add_Edit_Delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DOAN\role_admin\Read_Add_Edit_Delete.aspx.designer.cs">
+      <DependentUpon>Read_Add_Edit_Delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DOAN\SignIn_Up\trangchu.aspx.cs">
+      <DependentUpon>trangchu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DOAN\SignIn_Up\trangchu.aspx.designer.cs">
+      <DependentUpon>trangchu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DOAN\Firstpage\WebForm-FirstPage.aspx.cs">
+      <DependentUpon>WebForm-FirstPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DOAN\Firstpage\WebForm-FirstPage.aspx.designer.cs">
+      <DependentUpon>WebForm-FirstPage.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DOAN\Login.Master" />
+    <Content Include="App_Data\LUXURY_FASHION_SHOP.bak" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64846</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44367/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

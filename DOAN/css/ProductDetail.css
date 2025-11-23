@@ -1,0 +1,43 @@
+﻿/* Styles/product-detail.css */
+.detail-container {
+    display: flex;
+    gap: 40px;
+    margin: 40px;
+}
+
+.product-image {
+    width: 400px;
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.product-info {
+    max-width: 400px;
+}
+
+.size-options .size-btn {
+    margin: 5px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.quantity-control button {
+    width: 30px;
+    height: 30px;
+}
+
+.quantity-control input {
+    width: 50px;
+    text-align: center;
+}
+
+.add-to-cart {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}

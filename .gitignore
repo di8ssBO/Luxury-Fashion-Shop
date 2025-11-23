@@ -1,0 +1,52 @@
+# Thư mục build
+bin/
+obj/
+Debug/
+Release/
+.vs/
+
+# Các package đã cài đặt
+packages/
+node_modules/
+
+# File cấu hình cục bộ
+*.user
+*.suo
+*.userprefs
+*.sln.docstates
+
+# File database cục bộ
+*.mdf
+*.ldf
+*.ndf
+
+# File media và tài nguyên lớn
+*.mp4
+*.mov
+*.avi
+*.wmv
+*.flv
+*.zip
+*.rar
+*.7z
+*.psd
+*.ai
+*.iso
+
+# Cache và file tạm thời
+[Tt]emp/
+[Cc]ache/
+~$*
+*~
+*.log
+*.bak
+*.tmp
+
+# Thư mục phát triển
+.idea/
+.vscode/
+
+# File cấu hình cụ thể cho máy
+appsettings.Development.json
+Web.Debug.config
+Web.Release.config
